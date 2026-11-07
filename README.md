@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/logo.svg" alt="utcp-mcp bold" width="640"></p>
+
 # UTCP-MCP Bridge
 
 > **Bold fork.** The `bold` branch is a maintained fork of this bridge. It keeps array results as arrays (upstream PR #24) and builds against the `bold` branch of [Eli-Golin/typescript-utcp](https://github.com/Eli-Golin/typescript-utcp), which has fixes not yet released upstream (typescript-utcp PRs #61 and #62). Build it with `scripts/build-bold.sh` (needs `bun` and `npm`), then run `node dist/index.js` with `UTCP_CONFIG_FILE` set.
