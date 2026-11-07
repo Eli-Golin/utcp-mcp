@@ -50,13 +50,13 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "~1.20.2",
-    "@utcp/cli": "^1.1.0",
-    "@utcp/http": "^1.1.1",
-    "@utcp/mcp": "^1.1.2",
-    "@utcp/sdk": "^1.1.0",
-    "@utcp/text": "^1.1.0",
-    "@utcp/dotenv-loader": "^1.1.0",
-    "@utcp/file": "^1.1.0",
+    "@utcp/cli": "file:../typescript-utcp/packages/cli",
+    "@utcp/http": "file:../typescript-utcp/packages/http",
+    "@utcp/mcp": "file:../typescript-utcp/packages/mcp",
+    "@utcp/sdk": "file:../typescript-utcp/packages/core",
+    "@utcp/text": "file:../typescript-utcp/packages/text",
+    "@utcp/dotenv-loader": "file:../typescript-utcp/packages/dotenv-loader",
+    "@utcp/file": "file:../typescript-utcp/packages/file",
     "dotenv": "^16.0.0",
     "zod": "^3.22.0"
   }
