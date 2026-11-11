@@ -2,7 +2,7 @@
 // Wire up the local utcp-mcp bridge as an MCP server in Claude Code.
 //
 // Optionally overlays locally-built typescript-utcp packages (sibling repo)
-// onto the bridge's node_modules so edits to @utcp/sdk, @utcp/http, etc. flow
+// onto the bridge's node_modules so edits to @eli-golin/utcp-sdk, @eli-golin/utcp-http, etc. flow
 // through after a rebuild + Claude Code restart.
 //
 // Strategy: dist-overlay, not `npm link`. Modern npm aliases `unlink <pkg>` to

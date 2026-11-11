@@ -7,10 +7,10 @@ import path from "path";
 import { promises as fs } from "fs";
 import { parse as parseDotEnv } from 'dotenv';
 
-import "@utcp/http";
-import "@utcp/text";
-import "@utcp/mcp";
-import "@utcp/cli";
+import "@eli-golin/utcp-http";
+import "@eli-golin/utcp-text";
+import "@eli-golin/utcp-mcp";
+import "@eli-golin/utcp-cli";
 
 import {
     UtcpClient,
@@ -19,8 +19,8 @@ import {
     TagSearchStrategy,
     DefaultVariableSubstitutor,
     ensureCorePluginsInitialized
-} from "@utcp/sdk";
-import type { UtcpClientConfig } from "@utcp/sdk";
+} from "@eli-golin/utcp-sdk";
+import type { UtcpClientConfig } from "@eli-golin/utcp-sdk";
 
 ensureCorePluginsInitialized();
 

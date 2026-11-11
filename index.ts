@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // UTCP-MCP Bridge Entry Point
-// This is the main entry point for the npx @utcp/mcp-bridge command
+// This is the main entry point for the npx @eli-golin/utcp-mcp-bridge command
 
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
@@ -12,12 +12,12 @@ import { parse as parseDotEnv } from 'dotenv';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 
-import "@utcp/http";
-import "@utcp/text";
-import "@utcp/mcp";
-import "@utcp/cli";
-import "@utcp/dotenv-loader"
-import "@utcp/file"
+import "@eli-golin/utcp-http";
+import "@eli-golin/utcp-text";
+import "@eli-golin/utcp-mcp";
+import "@eli-golin/utcp-cli";
+import "@eli-golin/utcp-dotenv-loader"
+import "@eli-golin/utcp-file"
 
 import {
     UtcpClient,
@@ -27,8 +27,8 @@ import {
     DefaultVariableSubstitutor,
     ensureCorePluginsInitialized,
     UtcpClientConfigSerializer
-} from "@utcp/sdk";
-import type { UtcpClientConfig } from "@utcp/sdk";
+} from "@eli-golin/utcp-sdk";
+import type { UtcpClientConfig } from "@eli-golin/utcp-sdk";
 import { toCallToolContent } from "./call_tool_result.js";
 
 // Get current file directory for Node.js ESM

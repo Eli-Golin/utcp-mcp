@@ -203,5 +203,5 @@ cython_debug/
 # bash
 ingest.sh
 output.md
-# Local install of the bold build
+# Lockfile is not tracked
 package-lock.json

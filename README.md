@@ -1,8 +1,8 @@
-<p align="center"><img src="assets/logo.svg" alt="utcp-mcp bold" width="640"></p>
+<p align="center"><img src="assets/logo.svg" alt="utcp-mcp" width="640"></p>
 
 # UTCP-MCP Bridge
 
-> **Bold fork.** This is a maintained fork of this bridge: `main` holds our changes, and `follower-of-upstream` mirrors the upstream `main`. It keeps array results as arrays (upstream PR #24) and builds against the `bold` branch of [Eli-Golin/typescript-utcp](https://github.com/Eli-Golin/typescript-utcp), which has fixes not yet released upstream (typescript-utcp PRs #61 and #62). Build it with `scripts/build-bold.sh` (needs `bun` and `npm`), then run `node dist/index.js` with `UTCP_CONFIG_FILE` set.
+> **Maintained fork.** This is a maintained fork of [universal-tool-calling-protocol/utcp-mcp](https://github.com/universal-tool-calling-protocol/utcp-mcp): `main` holds our changes, and `follower-of-upstream` mirrors the upstream `main`. It keeps array results as arrays (upstream PR [#24](https://github.com/universal-tool-calling-protocol/utcp-mcp/pull/24)) and uses our fork of the libraries, [Eli-Golin/typescript-utcp](https://github.com/Eli-Golin/typescript-utcp), which has two fixes that are not released upstream yet (typescript-utcp PRs [#61](https://github.com/universal-tool-calling-protocol/typescript-utcp/pull/61) and [#62](https://github.com/universal-tool-calling-protocol/typescript-utcp/pull/62)). It is published as `@eli-golin/utcp-mcp-bridge`.
 
 **The last MCP server you'll ever need.**
 
@@ -17,7 +17,7 @@ Add this configuration to your MCP client (Claude Desktop, etc.):
   "mcpServers": {
     "utcp": {
       "command": "npx",
-      "args": ["@utcp/mcp-bridge"],
+      "args": ["@eli-golin/utcp-mcp-bridge"],
       "env": {
         "UTCP_CONFIG_FILE": "/path/to/your/.utcp_config.json"
       }
@@ -74,14 +74,14 @@ Create a `.utcp_config.json` file to configure your tools and services:
 For [Claude Code](https://claude.com/claude-code) (the CLI / IDE extension), register the bridge as a user-scoped MCP server:
 
 ```bash
-claude mcp add-json --scope user utcp '{"type":"stdio","command":"npx","args":["@utcp/mcp-bridge"],"env":{"UTCP_CONFIG_FILE":"/absolute/path/to/.utcp_config.json"}}'
+claude mcp add-json --scope user utcp '{"type":"stdio","command":"npx","args":["@eli-golin/utcp-mcp-bridge"],"env":{"UTCP_CONFIG_FILE":"/absolute/path/to/.utcp_config.json"}}'
 ```
 
 Then restart Claude Code. Verify with `claude mcp list`. Remove with `claude mcp remove utcp --scope user`.
 
 ## 🧪 Local development against the bridge
 
-If you're hacking on `@utcp/sdk` or any other [typescript-utcp](https://github.com/universal-tool-calling-protocol/typescript-utcp) package and want to exercise it through Claude Code, use the dev scripts:
+If you're hacking on `@eli-golin/utcp-sdk` or any other [typescript-utcp](https://github.com/Eli-Golin/typescript-utcp) package and want to exercise it through Claude Code, use the dev scripts:
 
 ```bash
 cd utcp-mcp

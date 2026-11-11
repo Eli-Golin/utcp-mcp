@@ -1,7 +1,7 @@
 {
-  "name": "@utcp/mcp-bridge",
-  "version": "1.1.0",
-  "description": "Model Context Protocol (MCP) server to use Universal Tool Calling Protocol (UTCP)",
+  "name": "@eli-golin/utcp-mcp-bridge",
+  "version": "1.1.1",
+  "description": "Model Context Protocol (MCP) server to use Universal Tool Calling Protocol (UTCP) (maintained fork)",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
@@ -28,15 +28,15 @@
     "tools",
     "ai"
   ],
-  "author": "UTCP Team",
+  "author": "Eli Golin (fork of the work by the UTCP Team)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/universal-tool-calling-protocol/utcp-mcp.git"
+    "url": "https://github.com/Eli-Golin/utcp-mcp.git"
   },
-  "homepage": "https://github.com/universal-tool-calling-protocol/utcp-mcp#readme",
+  "homepage": "https://github.com/Eli-Golin/utcp-mcp#readme",
   "bugs": {
-    "url": "https://github.com/universal-tool-calling-protocol/utcp-mcp/issues"
+    "url": "https://github.com/Eli-Golin/utcp-mcp/issues"
   },
   "engines": {
     "node": ">=18.0.0"
@@ -49,14 +49,14 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@eli-golin/utcp-cli": "^1.1.4",
+    "@eli-golin/utcp-dotenv-loader": "^1.1.1",
+    "@eli-golin/utcp-file": "^1.1.1",
+    "@eli-golin/utcp-http": "^1.1.15",
+    "@eli-golin/utcp-mcp": "^1.2.1",
+    "@eli-golin/utcp-sdk": "^1.2.1",
+    "@eli-golin/utcp-text": "^1.1.1",
     "@modelcontextprotocol/sdk": "~1.20.2",
-    "@utcp/cli": "file:../typescript-utcp/packages/cli",
-    "@utcp/http": "file:../typescript-utcp/packages/http",
-    "@utcp/mcp": "file:../typescript-utcp/packages/mcp",
-    "@utcp/sdk": "file:../typescript-utcp/packages/core",
-    "@utcp/text": "file:../typescript-utcp/packages/text",
-    "@utcp/dotenv-loader": "file:../typescript-utcp/packages/dotenv-loader",
-    "@utcp/file": "file:../typescript-utcp/packages/file",
     "dotenv": "^16.0.0",
     "zod": "^3.22.0"
   }

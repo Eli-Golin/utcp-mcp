@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" width="640" height="200" role="img" aria-labelledby="title desc">
-  <title id="title">utcp-mcp bold</title>
+  <title id="title">utcp-mcp</title>
   <desc id="desc">A suspension bridge: one anchor on the left, fanning out to many tools on the right.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -58,7 +58,7 @@
     <text x="216" y="142" font-size="20" fill="#94a3b8">one MCP server, every tool called natively</text>
     <g transform="translate(500 61)">
       <rect width="92" height="34" rx="17" fill="none" stroke="#a78bfa" stroke-width="2"/>
-      <text x="46" y="23" font-size="18" font-weight="700" fill="#c4b5fd" text-anchor="middle" letter-spacing="1">bold</text>
+      <text x="46" y="23" font-size="18" font-weight="700" fill="#c4b5fd" text-anchor="middle" letter-spacing="1">fork</text>
     </g>
   </g>
 </svg>
