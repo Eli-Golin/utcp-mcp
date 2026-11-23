@@ -8,7 +8,7 @@
         "@eli-golin/utcp-cli": "^1.1.4",
         "@eli-golin/utcp-dotenv-loader": "^1.1.1",
         "@eli-golin/utcp-file": "^1.1.1",
-        "@eli-golin/utcp-http": "^1.1.15",
+        "@eli-golin/utcp-http": "^1.2.0",
         "@eli-golin/utcp-mcp": "^1.2.2",
         "@eli-golin/utcp-sdk": "^1.2.1",
         "@eli-golin/utcp-text": "^1.1.1",
@@ -31,7 +31,7 @@
 
     "@eli-golin/utcp-file": ["@eli-golin/utcp-file@1.1.1", "", { "dependencies": { "@eli-golin/utcp-http": "^1.1.0", "@eli-golin/utcp-sdk": "^1.1.0", "js-yaml": "^4.1.0" } }, "sha512-XkBJNBLWr6DZKvmT93w6ECKGS9Jn8fL5QaZtwmNGBQLXbTjBeJ8k9SovR1S5ynT6r4MTknrj3ptnpHQ+aYviYw=="],
 
-    "@eli-golin/utcp-http": ["@eli-golin/utcp-http@1.1.15", "", { "dependencies": { "@eli-golin/utcp-sdk": "^1.1.1", "axios": "^1.11.0", "js-yaml": "^4.1.0" } }, "sha512-Z68Z2S1pmdl7x+Vqm9pI18bvOuy5ziGXBbu2uT8NNC1xBXlOGprl0GqI9QduTuzBASluZMsNnu66a+WTrVLkIQ=="],
+    "@eli-golin/utcp-http": ["@eli-golin/utcp-http@1.2.0", "", { "dependencies": { "@eli-golin/utcp-sdk": "^1.1.1", "axios": "^1.11.0", "js-yaml": "^4.1.0" } }, "sha512-FxnEyEd3Z7Sp5m4TWvK+BH6K7C2WQbdGee6mvavJYF149ia/OzR0dKdmaodPhRe0vMcFTyLzvfpTlTm/Ojqs8g=="],
 
     "@eli-golin/utcp-mcp": ["@eli-golin/utcp-mcp@1.2.2", "", { "dependencies": { "@apidevtools/json-schema-ref-parser": "^15.1.2", "@eli-golin/utcp-sdk": "^1.2.0", "@modelcontextprotocol/sdk": "^1.17.4", "axios": "^1.11.0" } }, "sha512-3hZMCX1m/6RkgQ73N7rOGiYluGWHCdBbO2EkpWqBkSV6pwgUtKHJX2oENm2X3ee+HDQQ+FXduaYOONTEVGOsZQ=="],
 

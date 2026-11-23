@@ -69,6 +69,27 @@ Create a `.utcp_config.json` file to configure your tools and services:
 }
 ```
 
+### Plain HTTP services on a trusted network
+
+HTTP-based call templates (`http`, `sse`, `streamable_http`) must use HTTPS or a literal loopback address.
+For a LAN service without TLS, opt in per call template with `"allow_insecure_http": true`. Put it on the
+manual's call template when the bridge discovers the manual over HTTP, or on each tool's `tool_call_template`
+in a manual file:
+
+```json
+{
+  "name": "grafana_dev",
+  "call_template_type": "http",
+  "http_method": "GET",
+  "url": "http://192.168.14.245:32520/api/search",
+  "allow_insecure_http": true
+}
+```
+
+Traffic to that host, credentials included, is then unencrypted. A redirect off that origin is still refused,
+and a manual fetched over the network cannot set the flag on its own tools unless the template that fetched
+it does. Requires `@eli-golin/utcp-http` 1.2.0 or later.
+
 ### Claude Code (CLI)
 
 For [Claude Code](https://claude.com/claude-code) (the CLI / IDE extension), register the bridge as a user-scoped MCP server:
