@@ -1,6 +1,6 @@
 {
   "name": "@eli-golin/utcp-mcp-bridge",
-  "version": "1.2.1",
+  "version": "1.2.0",
   "description": "Model Context Protocol (MCP) server to use Universal Tool Calling Protocol (UTCP) (maintained fork)",
   "type": "module",
   "main": "dist/index.js",
